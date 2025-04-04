@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+/*Configuração geral da página */
+
+body{
+    margin: 0 auto;
+    font-family: "Century Gothic", "sans-serif";
+    background-color: black;
+    color: white;
+}
+/****Configurações gerais*****/
+
+/* Cabeçalho */
+header{
+    height: 110px;
+    background-color: red;
+}
+header img{
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+.logo2{
+    float: right;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+
+}
+header h1{
+    text-align: center;
+    margin: 0px;
+    padding-top: 35px;
+    font-size: 30px;
+    color: white;
+}
+/****menu****/
+nav{
+    clear: both;
+    width: 80%;
+    margin: 0px auto;
+    height: 55px;
+}
+nav a{
+    color:  white;   
+    text-decoration: none;
+    text-align: center;
+}
+nav .opcao{
+    float: left;        
+    width: 31,3%;
+    background-color:black;
+    padding: 10px 0;
+    margin: 0 1%;
+    font-size: 26px;
+}
+nav .opcao:hover{
+    background-color: red;
+}
+/*Área geral para conteúdos específicos de cada página*/
+section{
+    clear: both;
+    min-height: 570px;
+    width: 100%;
+    margin-top: 0px;
+}
+/* Rodapé */
+footer{
+    background-color: red;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+/****Configuraçao da página inicial****/
+section #topo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 900px;
+    margin:auto;
+}
+.torcida{
+     width: 400px;
+     height: auto;
+} 
+section #titulos{
+    flex: 1;
+    float:left;
+   
+}
+h2{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+h3{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+section p{
+    clear: both;
+    text-align: center;
+    margin: 70px 80px;
+}
+/****Configuraçao da página sobre****/
+.titulos-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tabelaTitulos{
+    float: right;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 150px;
+    text-align: center;
+    color: white;
+}
+.tituloTabela{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+    border: transparent;
+}
+.imagem-taca{
+    width: 350px;
+    height: 450px;
+    margin-left: 150px;
+}
+tr,td,th{
+    border: 1px solid black;
+    padding: 5px;
+}
+tr,td{
+    font-size: 14px;
+}
+tr:nth-child(even){
+    background-color: black;
+}
+tr:nth-child(odd){
+    background-color: red;
+}
+/****Configuraçao da página inscrição****/
+.inscricao{
+    width: 300px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: red;
+}
+.inscricao input, .inscricao textarea{
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px 0;
+}
+.inscricao textarea{
+    height: 100px;
+    resize: none;
+}
+.inscricao button{
+    width: 30%;
+    margin: 0 10%;
+    background-color: black;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+.radio-group, .checkbox-group {
+    display: flex;
+    align-items: center;
+    
+}

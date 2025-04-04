@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site Fã-clube do Flamengo">
+    <meta name="keywords" content="Fã-clube,Flamengo,Inscricão">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fã-clube Clube de Regatas do Flamengo</title>
+    <link rel="stylesheet" type="text/css" href="../../site.css">
+</head>
+<body>
+    <header>
+        <img src="../../imgs/logoCRF.png" alt="Logo CRF">
+        <img src="../../imgs/flamengo.png" alt="Logos">
+        <h1>Clube de Regatas do Flamengo</h1>
+    </header>
+    <nav>
+        <a href="../../index.html"><div class="opcao">Incio</div></a>
+        <a href="../site/sobre.html"><div class="opcao">Sobre</div></a>
+        <a href=""><div class="opcao">Inscricão</div></a>
+    </nav>
+    <section>
+        <h2>Inscrição</h2>
+        <h3>Preencha o formulário e se inscreva em nosso fã-clube!</h3>
+        <form name="frminscricao" method="post" action="#">
+            <fieldset class="inscricao">
+                <legend>Dados pessoais</legend>
+                <label for="nome">Nome</label>
+                <input type="text" name="txtnome" id="nome">
+
+                <label for="sexo">Sexo</label>
+                <div class="radio-group">
+                    <input type="radio" name="genero" id="masculino" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="genero" id="feminino" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+
+                <label for="data">Data de Nascimento</label>
+                <input type="date" name="datanascimento" id="data">
+
+                <label for="fone">Telefone</label>
+                <input type="text" name="txtfone" id="fone">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="txtemail" id="email">
+            </fieldset>
+
+            <fieldset class="inscricao">
+                <label for="">Deseja 
+                    participar do fã-clube?</label>
+
+                <div class="radio-group">   
+                    <input type="radio" name="faclube" id="sim" value="Sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" name="faclube" id="nao" value="Não">
+                    <label for="nao">Não</label>
+                </div>
+                <label for="comentario">Comentário:</label>
+                <textarea name="txacomentario" id="comentario"></textarea>
+
+                <button type="reset">Limpar</button><button type="submit">Enviar</button>
+        
+            </fieldset>
+            
+        </form>
+    </section>
+    <footer>Copyright &copy; 2025 - Clube de Regatas do Flamengo. Todos os direitos reservados.</footer>
+</body>
+</html>
