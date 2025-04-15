@@ -171,8 +171,13 @@ tr:nth-child(odd){
     font-size: 16px;
     color: white;
 }
-.radio-group, .checkbox-group {
+.radio{
     display: flex;
     align-items: center;
     
+}
+.checkbox{
+    display: flex;
+    float: right;
+
 }
