@@ -1,6 +1,9 @@
 function validaInscricao(){
-    if(document.frminscricao.txtnome.value==""){
-        alert("Preencha o campo Nome. ");
+    var nome = document.frminscricao.txtnome.value;
+    var expRegNome = new RegExp ("^[A-zÀ-ü]{3,}([ ]{1}[A-zÀ-ü]{2,})+$");
+
+    if(!expRegNome.test(nome)){
+        alert("Preencha o campo Nome corretamente.");
         document.frminscricao.txtnome.focus();
         return false;
     }
@@ -23,13 +26,19 @@ function validaInscricao(){
         document.frminscricao.datanascimento.focus();
         return false;
     }
-    if(document.frminscricao.txtfone.value==""){
-        alert("Preencha o campo Telefone. ");
+    var fone = document.frminscricao.txtfone.value;
+    var expRegFone = new RegExp("^[(]{1}[1-9]{2}[)]{1}[0-9]{4,5}[-]{1}[0-9]{4}$");
+    
+    if (!expRegFone.test(fone)) {
+        alert("Preencha o campo Telefone Corretamente.");
         document.frminscricao.txtfone.focus();
         return false;
     }
-    if(document.frminscricao.email.value==""){
-        alert("Preencha o campo Email. ");
+    var email = document.frminscricao.email.value;
+    var expRegEmail = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$");
+    
+    if (!expRegEmail.test(email)) {
+        alert("Preencha o campo Email Corretamente.");
         document.frminscricao.email.focus();
         return false;
     }
